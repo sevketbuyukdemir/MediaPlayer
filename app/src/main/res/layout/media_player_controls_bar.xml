@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/media_player_controls_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/media_player_controls_bar_background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/media_player_controls_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/media_player_controls_layout_arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/media_player_controls_up_arrow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/previous_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/previous"/>
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/play"/>
+        <ImageButton
+            android:id="@+id/pause_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pause"/>
+        <ImageButton
+            android:id="@+id/stop_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/stop"/>
+        <ImageButton
+            android:id="@+id/next_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/next"/>
+    </LinearLayout>
+</LinearLayout>
